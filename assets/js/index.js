@@ -1,0 +1,35 @@
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(showPosition);
+} else {
+  console.log("Trình duyệt không hỗ trợ Geolocation.");
+}
+
+function showPosition(position) {
+  var latitude = position.coords.latitude;
+  var longitude = position.coords.longitude;
+  console.log("Vị trí của bạn là: " + latitude + ", " + longitude);
+}
+
+window.addEventListener("DOMContentLoaded", function() {
+  var slides = document.querySelectorAll(".slide");
+  var dots = document.querySelectorAll(".dot");
+  var currentSlide = 0;
+
+  function showSlide(n) {
+    slides[currentSlide].classList.remove("show");
+    dots[currentSlide].classList.remove("active");
+    currentSlide = (n + slides.length) % slides.length;
+    slides[currentSlide].classList.add("show");
+    dots[currentSlide].classList.add("active");
+  }
+
+  function currentSlide(n) {
+    showSlide(n);
+  }
+
+  showSlide(currentSlide);
+
+  setInterval(function() {
+    showSlide(currentSlide + 1);
+  }, 5000);
+});
