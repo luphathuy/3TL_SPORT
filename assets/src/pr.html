@@ -12,6 +12,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
   <link rel="shortcut icon" type="image/png" href="../img/Logo.png" />
   <title>Premier League</title>
 </head>
@@ -23,7 +24,7 @@
       <a href="../../index.html">TRANG CHỦ</a>
       <ul class="clothes">
         <li>
-          <a href="">ÁO CHÍNH HÃNG</a>
+          <a href="./shirt.html">ÁO CHÍNH HÃNG</a>
           <ul>
             <li class="clo1"><a href="./pr.html">PREMIER LEAGUE</a></li>
             <li><a href="./ucl.html">CHAMPIONS LEAGUE</a></li>
@@ -32,7 +33,7 @@
       </ul>
       <ul class="shoe">
         <li>
-          <a href="">GIÀY CHÍNH HÃNG</a>
+          <a href="./shoe.html">GIÀY CHÍNH HÃNG</a>
           <ul>
             <li class="clo1"><a href="./shoe.one.html">NIKE</a></li>
             <li><a href="./shoe.two.html">ADIDAS</a></li>
@@ -54,12 +55,23 @@
   </div>
 
     <div class="banner-header">
-      <img id="img" onclick="changeImage()" src="../img/banner_tong.jpg" alt="" width="100%">
+      <img src="../img/banner_tong.jpg" alt="" width="100%">
     </div>
 
     <div class="color1">
-      <div class="container_product">
-        <h2 class="title1">ÁO BÓNG ĐÁ PREMIER LEAGUE</h2>
+        <div class="filter">
+          <div class="filter1">
+            <a href="../../index.html">TRANG CHỦ</a>
+            <i class="fas fa-angle-right"></i>
+            <a href="../src/shirt.html">ÁO CHÍNH HÃNG</a>
+            <i class="fas fa-angle-right"></i>
+            <p>PREMIER LEAGUE</p>
+          </div>
+          <div class="filter2">
+            <p>LỌC SẢN PHẨM</p>
+            <i class="fas fa-filter"></i>
+          </div>
+        </div>
         <div class="products">
 
           <div class="product">
@@ -120,7 +132,6 @@
             <button class="btn-buy">Thêm vào giỏ hàng</button>
           </div>
         </div>
-      </div>
     </div>
 
       <div class="footer">
@@ -165,6 +176,7 @@
     <div class="license">
       <p>© Copyright 2023 By 3TL SPORT. Powered by 3TL SPORT</p>
     </div>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

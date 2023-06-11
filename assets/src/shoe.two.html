@@ -12,6 +12,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
   <link rel="shortcut icon" type="image/png" href="../img/Logo.png" />
   <title>GIÀY ADIDAS</title>
 </head>
@@ -25,7 +26,7 @@
       <a href="../../index.html">TRANG CHỦ</a>
       <ul class="clothes">
         <li>
-          <a href="">ÁO CHÍNH HÃNG</a>
+          <a href="./shirt.html">ÁO CHÍNH HÃNG</a>
           <ul>
             <li class="clo1"><a href="./pr.html">PREMIER LEAGUE</a></li>
             <li><a href="./ucl.html">CHAMPIONS LEAGUE</a></li>
@@ -34,7 +35,7 @@
       </ul>
       <ul class="shoe">
         <li>
-          <a href="">GIÀY CHÍNH HÃNG</a>
+          <a href="./shoe.html">GIÀY CHÍNH HÃNG</a>
           <ul>
             <li class="clo1"><a href="./shoe.one.html">NIKE</a></li>
             <li><a href="./shoe.two.html">ADIDAS</a></li>
@@ -55,117 +56,128 @@
   </div>
 
   <div class="banner-header">
-    <img id="img" onclick="changeImage()" src="../img/banner_tong.jpg" alt="" width="100%">
+    <img src="../img/banner_tong.jpg" alt="" width="100%">
   </div>
 
-    <div class="color1">
-      <h2 class="title1">GIÀY ĐÁ BÓNG NIKE CHÍNH HÃNG</h2>
-      <div class="container_product">
-        <div class="products">
-
-          <div class="product">
-            <a href=""><img src="../img/009.png" alt="mancity01"></a>
-            <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
-            <p class="price">109,000₫<del>299,000₫</del></p>
-            <button class="btn-buy">Thêm vào giỏ hàng</button>
-          </div>
-
-          <div class="product">
-            <a href=""><img src="../img/010.png" alt=""></a>
-            <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
-            <p class="price">85,000₫<del>299,000₫</del></p>
-            <button class="btn-buy">Thêm vào giỏ hàng</button>
-          </div>
-
-          <div class="product">
-            <a href=""><img src="../img/011.png" alt=""></a>
-            <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
-            <p class="price">90,000₫<del>299,000₫</del></p>
-            <button class="btn-buy">Thêm vào giỏ hàng</button>
-          </div>
-
-          <div class="product">
-            <a href=""><img src="../img/012.png" alt=""></a>
-            <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
-            <p class="price">120,000₫<del>299,000₫</del></p>
-            <button class="btn-buy">Thêm vào giỏ hàng</button>
-          </div>
-        </div>
-
-        <div class="products">
-          <div class="product">
-            <a href=""><img src="../img/013.png" alt=""></a>
-            <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
-            <p class="price">109,000₫<del>299,000₫</del></p>
-            <button class="btn-buy">Thêm vào giỏ hàng</button>
-          </div>
-
-          <div class="product">
-            <a href=""><img src="../img/014.png" alt=""></a>
-            <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
-            <p class="price">80,000₫<del>299,000₫</del></p>
-            <button class="btn-buy">Thêm vào giỏ hàng</button>
-          </div>
-
-          <div class="product">
-            <a href=""><img src="../img/015.png" alt=""></a>
-            <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
-            <p class="price">160,000₫<del>299,000₫</del></p>
-            <button class="btn-buy">Thêm vào giỏ hàng</button>
-          </div>
-
-          <div class="product">
-            <a href=""><img src="../img/016.png" alt=""></a>
-            <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
-            <p class="price">80,000₫<del>299,000₫</del></p>
-            <button class="btn-buy">Thêm vào giỏ hàng</button>
-          </div>
-        </div>
+  <div class="color1">
+    <div class="filter">
+      <div class="filter1">
+        <a href="../../index.html">TRANG CHỦ</a>
+        <i class="fas fa-angle-right"></i>
+        <a href="../src/shirt.html">GIÀY CHÍNH HÃNG</a>
+        <i class="fas fa-angle-right"></i>
+        <p>ADIDAS</p>
+      </div>
+      <div class="filter2">
+        <p>LỌC SẢN PHẨM</p>
+        <i class="fas fa-filter"></i>
       </div>
     </div>
-    <div class="footer">
-      <div class="info">
-        <h3>3TL SPORT</h3>
-        <div>
-          <i class="fas fa-map-marker-alt"> Chi Nhánh Cần Thơ</i>
-        </div>
-        <ul>
-          <li>Mậu Thân: 74 Đ.Mậu Thân, An Nghiệp, Ninh Kiều, Cần Thơ</li>
-          <li>Nguyễn Văn Linh: 288 Đ.Nguyễn Văn Linh, An Khánh, Ninh Kiều, Cần Thơ</li>
-          <li>Nguyễn Văn Cừ: 179 Đ.Nguyễn Văn Cừ, An Khánh, Ninh Kiều, Cần Thơ</li>
-        </ul>
-        <div>
-          <i class='fas fa-phone'>: 0123456789</i>
-          <br>
-          <i class="fa fa-envelope">: 3tl@gmail.com</i>
-        </div>
+    <div class="products">
+
+      <div class="product">
+        <a href=""><img src="../img/009.png" alt="mancity01"></a>
+        <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
+        <p class="price">109,000₫<del>299,000₫</del></p>
+        <button class="btn-buy">Thêm vào giỏ hàng</button>
       </div>
 
-      <div class="link">
-        <h3>Liên Kết</h3>
-        <div class="text-link">
-          <p>Tìm Kiếm</p>
-          <p>Giới thiệu</p>
-          <p>Chính sách đổi trả</p>
-          <p>Điều khoản và dịch vụ</p>
-          <p>Dịch vụ chăm sóc khách hàng</p>
-        </div>
+      <div class="product">
+        <a href=""><img src="../img/010.png" alt=""></a>
+        <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
+        <p class="price">85,000₫<del>299,000₫</del></p>
+        <button class="btn-buy">Thêm vào giỏ hàng</button>
       </div>
 
-      <div class="share">
-        <h3>Chia sẻ</h3>
-        <div class="mxh">
-          <p href="#" class="fa fa-facebook"> Facebook</p><br>
-          <p href="#" class="fa fa-youtube"> Youtube</p><br>
-          <p href="#" class="fa fa-twitter"> Twitter</p><br>
-          <p href="#" class="fa fa-instagram"> Instagram</p>
-        </div>
+      <div class="product">
+        <a href=""><img src="../img/011.png" alt=""></a>
+        <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
+        <p class="price">90,000₫<del>299,000₫</del></p>
+        <button class="btn-buy">Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <a href=""><img src="../img/012.png" alt=""></a>
+        <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
+        <p class="price">120,000₫<del>299,000₫</del></p>
+        <button class="btn-buy">Thêm vào giỏ hàng</button>
       </div>
     </div>
+
+    <div class="products">
+      <div class="product">
+        <a href=""><img src="../img/013.png" alt=""></a>
+        <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
+        <p class="price">109,000₫<del>299,000₫</del></p>
+        <button class="btn-buy">Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <a href=""><img src="../img/014.png" alt=""></a>
+        <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
+        <p class="price">80,000₫<del>299,000₫</del></p>
+        <button class="btn-buy">Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <a href=""><img src="../img/015.png" alt=""></a>
+        <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
+        <p class="price">160,000₫<del>299,000₫</del></p>
+        <button class="btn-buy">Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <a href=""><img src="../img/016.png" alt=""></a>
+        <h3 class="name">ADIDAS CHÍNH HÃNG 2023</h3>
+        <p class="price">80,000₫<del>299,000₫</del></p>
+        <button class="btn-buy">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="info">
+      <h3>3TL SPORT</h3>
+      <div>
+        <i class="fas fa-map-marker-alt"> Chi Nhánh Cần Thơ</i>
+      </div>
+      <ul>
+        <li>Mậu Thân: 74 Đ.Mậu Thân, An Nghiệp, Ninh Kiều, Cần Thơ</li>
+        <li>Nguyễn Văn Linh: 288 Đ.Nguyễn Văn Linh, An Khánh, Ninh Kiều, Cần Thơ</li>
+        <li>Nguyễn Văn Cừ: 179 Đ.Nguyễn Văn Cừ, An Khánh, Ninh Kiều, Cần Thơ</li>
+      </ul>
+      <div>
+        <i class='fas fa-phone'>: 0123456789</i>
+        <br>
+        <i class="fa fa-envelope">: 3tl@gmail.com</i>
+      </div>
+    </div>
+
+    <div class="link">
+      <h3>Liên Kết</h3>
+      <div class="text-link">
+        <p>Tìm Kiếm</p>
+        <p>Giới thiệu</p>
+        <p>Chính sách đổi trả</p>
+        <p>Điều khoản và dịch vụ</p>
+        <p>Dịch vụ chăm sóc khách hàng</p>
+      </div>
+    </div>
+
+    <div class="share">
+      <h3>Chia sẻ</h3>
+      <div class="mxh">
+        <p href="#" class="fa fa-facebook"> Facebook</p><br>
+        <p href="#" class="fa fa-youtube"> Youtube</p><br>
+        <p href="#" class="fa fa-twitter"> Twitter</p><br>
+        <p href="#" class="fa fa-instagram"> Instagram</p>
+      </div>
+    </div>
+  </div>
   </div>
   <div class="license">
     <p>© Copyright 2023 By 3TL SPORT. Powered by 3TL SPORT</p>
   </div>
+  <script src="../js/index.js"></script>
 </body>
 
 </html>

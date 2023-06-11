@@ -13,18 +13,21 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" type="image/png" href="./assets/img/Logo.png"/>
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <link rel="shortcut icon" type="image/png" href="./assets/img/Logo.png" />
 
 </head>
 
 <body>
   <div class="menu">
-    <a href="./index.html" title="Trang chủ"><p class="img-menu">3TL SPORT</p></a>
+    <a href="./index.html" title="Trang chủ">
+      <p class="img-menu">3TL SPORT</p>
+    </a>
     <div class="list-menu">
       <a href="./index.html">TRANG CHỦ</a>
       <ul class="clothes">
         <li>
-          <a href="">ÁO CHÍNH HÃNG</a>
+          <a href="./assets/src/shirt.html">ÁO CHÍNH HÃNG</a>
           <ul>
             <li class="clo1"><a href="./assets/src/pr.html">PREMIER LEAGUE</a></li>
             <li><a href="./assets/src/ucl.html">CHAMPIONS LEAGUE</a></li>
@@ -33,7 +36,7 @@
       </ul>
       <ul class="shoe">
         <li>
-          <a href="">GIÀY CHÍNH HÃNG</a>
+          <a href="./assets/src/shoe.html">GIÀY CHÍNH HÃNG</a>
           <ul>
             <li class="clo1"><a href="./assets/src/shoe.one.html">NIKE</a></li>
             <li><a href="./assets/src/shoe.two.html">ADIDAS</a></li>
@@ -42,9 +45,21 @@
       </ul>
       <a href="./assets/src/contact.html">LIÊN HỆ</a>
     </div>
+    <nav>
+      <label for="check" class="checkbtn">
+        <div class="bars"><i class="fa fa-bars"></i></div>
+      </label>
+      <input type="checkbox" id="check">
+      <ul>
+        <li><a href="../index.html">TRANG CHỦ</a></li>
+        <li><a href="./assets/src/shirt.html">ÁO CHÍNH HÃNG</a></li>
+        <li><a href="./assets/src/shoe.html">GIÀY CHÍNH HÃNG</a></li>
+        <li><a href="./assets/src/contact.html">LIÊN HỆ</a></li>
+      </ul>
+    </nav>
     <div class="btn-searchs">
       <input class="btn-search" type="text" placeholder="Tìm kiếm...">
-      <i class="fa fa-search icon-menu" style="color: #000"></i>
+      <i class="fas fa-search icon-menu" style="color: #000"></i>
     </div>
 
     <div class="sp-us">
@@ -56,13 +71,13 @@
 
   <div class="banner-header">
     <div class="slide">
-      <img src="./assets/img/banner_tong.jpg" alt="Image 1">
+      <img src="./assets/img/banner_tong.jpg" alt="Image 1" width="100%">
     </div>
     <div class="slide">
-      <img src="./assets/img/banner_tong2.jpg" alt="Image 2">
+      <img src="./assets/img/banner_tong2.jpg" alt="Image 2" width="100%">
     </div>
     <div class="slide">
-      <img src="./assets/img/banner_tong3.jpg" alt="Image 3">
+      <img src="./assets/img/banner_tong3.jpg" alt="Image 3" width="100%">
     </div>
     <div class="navigation">
       <div class="dot" onclick="currentSlide(0)"></div>
@@ -77,29 +92,29 @@
       <div class="products">
 
         <div class="product">
-          <a href=""><img src="./assets/img/001.png" alt="mancity01"></a>
-          <h3 class="name">ÁO REAL MADRID</h3>
+          <img src="./assets/img/001.png" alt="mancity01" onclick="on()">
+          <h3 class="name">REAL MADRID</h3>
           <p class="price">199.000VND<del>299.000VND</del></p>
           <button class="btn-buy">Thêm vào giỏ hàng</button>
         </div>
 
         <div class="product">
           <a href=""><img src="./assets/img/002.png" alt="mancity01"></a>
-          <h3 class="name">ÁO BARCALONA</h3>
+          <h3 class="name">BARCALONA</h3>
           <p class="price">199.000VND<del>299.000VND</del></p>
           <button class="btn-buy">Thêm vào giỏ hàng</button>
         </div>
 
         <div class="product">
-          <a href=""><img src="./assets/img/003.png" alt="mancity01"></a>
-          <h3 class="name">ÁO MAN CITY</h3>
+          <a href=""><img src="./assets/img/009.png" alt="mancity01"></a>
+          <h3 class="name">NIKE</h3>
           <p class="price">199.000VND<del>299.000VND</del></p>
           <button class="btn-buy">Thêm vào giỏ hàng</button>
         </div>
 
         <div class="product">
-          <a href=""><img src="./assets/img/004.png" alt="mancity01"></a>
-          <h3 class="name">ÁO REAL SOCIEDAD</h3>
+          <a href=""><img src="./assets/img/010.png" alt="mancity01"></a>
+          <h3 class="name">NIKE</h3>
           <p class="price">199.000VND<del>299.000VND</del></p>
           <button class="btn-buy">Thêm vào giỏ hàng</button>
         </div>
@@ -109,17 +124,17 @@
 
     <div class="color2">
       <h2 class="title2">CÁC LOẠI GIÀY</h2>
-        <div class="new-shoe">
-          <div class="shoes">
-            <a href="./assets/src/shoe.one.html"><img src="./assets/img/bannernike.jpg" alt=""></a>
-            <a href="./assets/src/shoe.one.html">NIKE <i class="fas fa-angle-double-right"></i></a>
-          </div>
-
-          <div class="shoes">
-            <a href="./assets/src/shoe.two.html"><img src="./assets/img/banneradidas.jpg" alt=""></a>
-            <a href="./assets/src/shoe.two.html">ADIDAS <i class="fas fa-angle-double-right"></i></a>
-          </div>
+      <div class="new-shoe">
+        <div class="shoes">
+          <a href="./assets/src/shoe.one.html"><img src="./assets/img/bannernike.jpg" alt=""></a>
+          <a href="./assets/src/shoe.one.html">NIKE <i class="fas fa-angle-double-right"></i></a>
         </div>
+
+        <div class="shoes">
+          <a href="./assets/src/shoe.two.html"><img src="./assets/img/banneradidas.jpg" alt=""></a>
+          <a href="./assets/src/shoe.two.html">ADIDAS <i class="fas fa-angle-double-right"></i></a>
+        </div>
+      </div>
     </div>
 
     <div class="color3">
@@ -203,6 +218,39 @@
       <img class="img3" src="./assets/img/khungthanh.png" alt="" width="30%">
       <img class="img1" src="./assets/img/traibanh.png" alt="" width="3%" height="3%">
       <img class="img2" src="./assets/img/ronaldo.png" alt="" width="20%">
+    </div>
+  </div>
+
+  <div id="overlay">
+    <div class="container" id="text">
+      <div class="product_con">
+        <img class="product-img1 product-img12" id="img1" src="" alt="Product Image"
+          width="100px" height="90px">
+        <br>
+        <img class="product-img2 product-img12" id="img2" src="" alt="Product Image"
+          width="100px" height="90px">
+      </div>
+      <img src="" alt="Product Image" id="img3"
+        width="333px" height="333px">
+      <div class="product-info">
+        <h1 class="product-title">ÁO BÓNG ĐÁ REAL MADRID SÂN NHÀ 2023</h1>
+        <div class="prices">
+          <p class="product-price">109,000VND</p>
+          <del>299,000VND</del>
+        </div>
+        <p class="product-title2">CAM KẾT ĐỔI TRẢ HOẶC HOÀN TIỀN NẾU SẢN PHẨM LỖI</p>
+        <p class="product-size">CHỌN SIZE</p>
+        <div class="product-sml">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+        </div>
+        <div class="product-soluong">
+          <input type="text" name="sl" placeholder="Số lượng..">
+        </div>
+          <button class="add-to-cart">THÊM VÀO GIỎ HÀNG</button>
+          <i class="fas fa-close" onclick="off()"></i>
+      </div>
     </div>
   </div>
 

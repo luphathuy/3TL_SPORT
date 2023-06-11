@@ -10,7 +10,7 @@ function showPosition(position) {
   console.log("Vị trí của bạn là: " + latitude + ", " + longitude);
 }
 
-window.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("DOMContentLoaded", function () {
   var slides = document.querySelectorAll(".slide");
   var dots = document.querySelectorAll(".dot");
   var currentSlide = 0;
@@ -29,7 +29,28 @@ window.addEventListener("DOMContentLoaded", function() {
 
   showSlide(currentSlide);
 
-  setInterval(function() {
+  setInterval(function () {
     showSlide(currentSlide + 1);
   }, 5000);
 });
+
+jQuery('body').append('<div style="" id="loadingDiv"><div class="loader"></div></div>');
+jQuery(window).on('load', function () {
+  setTimeout(removeLoader, 200);
+});
+function removeLoader() {
+  jQuery("#loadingDiv").fadeOut(200, function () {
+    jQuery("#loadingDiv").remove();
+  });
+}
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+  document.getElementById('img1').src = "./assets/img/001.png";
+  document.getElementById('img2').src = "./assets/img/001.png";
+  document.getElementById('img3').src = "./assets/img/001.png";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}

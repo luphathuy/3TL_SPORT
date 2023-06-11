@@ -12,6 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <link rel="shortcut icon" type="image/png" href="../img/Logo.png" />
 </head>
 
@@ -24,7 +25,7 @@
             <a href="../../index.html">TRANG CHỦ</a>
             <ul class="clothes">
                 <li>
-                    <a href="">ÁO CHÍNH HÃNG</a>
+                    <a href="./shirt.html">ÁO CHÍNH HÃNG</a>
                     <ul>
                         <li class="clo1"><a href="./pr.html">PREMIER LEAGUE</a></li>
                         <li><a href="./ucl.html">CHAMPIONS LEAGUE</a></li>
@@ -33,7 +34,7 @@
             </ul>
             <ul class="shoe">
                 <li>
-                    <a href="">GIÀY CHÍNH HÃNG</a>
+                    <a href="./shoe.html">GIÀY CHÍNH HÃNG</a>
                     <ul>
                         <li class="clo1"><a href="./shoe.one.html">NIKE</a></li>
                         <li><a href="./shoe.two.html">ADIDAS</a></li>
@@ -42,6 +43,18 @@
             </ul>
             <a href="./contact.html">LIÊN HỆ</a>
         </div>
+        <nav>
+            <label for="check" class="checkbtn">
+              <div class="bars"><i class="fa fa-bars"></i></div>
+            </label>
+            <input type="checkbox" id="check">
+            <ul>
+              <li><a href="../../index.html">TRANG CHỦ</a></li>
+              <li><a href="./shirt.html">ÁO CHÍNH HÃNG</a></li>
+              <li><a href="./shoe.html">GIÀY CHÍNH HÃNG</a></li>
+              <li><a href="./contact.html">LIÊN HỆ</a></li>
+            </ul>
+          </nav>
         <div class="btn-searchs">
             <input class="btn-search" type="text" placeholder="Tìm kiếm...">
             <i class="fa fa-search icon-menu" style="color: #000"></i>
@@ -57,13 +70,12 @@
         <div class="gg-map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118701.65740577132!2d105.79431937467139!3d9.933868865455258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a087c87bddae21%3A0xee4d0c332673b3b4!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaeG6v24gVHLDumMgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIC0gVHJ1bmcgdMOibSDEkMOgbyB04bqhbyBUUC5D4bqnbiBUaMah!5e0!3m2!1svi!2s!4v1685153723696!5m2!1svi!2s"
-                width="700" height="1000px" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
         <div class="info-form">
             <h1>LIÊN HỆ</h1>
-            <br>
-            <hr>
             <ul class="list-info">
                 <li>
                     <p>Địa chỉ của chúng tôi</p>
@@ -97,8 +109,7 @@
                         </strong>
                     </p>
                 </li>
-            </ul><br>
-            <hr><br><br>
+            </ul>
 
             <form class="dathang">
                 <div class="col-sm-12 col-md-6">
@@ -120,7 +131,7 @@
                             placeholder="Nội dung"></textarea>
                     </div>
             </form>
-            <button class="js-btnPlaceOrder btn btn-info fw" style="width: 70px; height: 40px;">Gửi</button>
+            <button class="btn-info" style="width: 70px; height: 40px;">Gửi</button>
         </div>
     </div>
     </div>
@@ -184,8 +195,7 @@
     <div class="license">
         <p>© Copyright 2023 By 3TL SPORT. Powered by 3TL SPORT</p>
     </div>
-
-    <script src="./giohang/js/main.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
