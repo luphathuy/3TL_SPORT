@@ -21,11 +21,11 @@ window.addEventListener("DOMContentLoaded", function () {
     currentSlide = (n + slides.length) % slides.length;
     slides[currentSlide].classList.add("show");
     dots[currentSlide].classList.add("active");
-  }
+  };
 
   function currentSlide(n) {
     showSlide(n);
-  }
+  };
 
   showSlide(currentSlide);
 
@@ -46,11 +46,8 @@ function removeLoader() {
 
 function on() {
   document.getElementById("overlay").style.display = "block";
-  document.getElementById('img1').src = "./assets/img/001.png";
-  document.getElementById('img2').src = "./assets/img/001.png";
-  document.getElementById('img3').src = "./assets/img/001.png";
-}
+};
 
 function off() {
   document.getElementById("overlay").style.display = "none";
-}
+};

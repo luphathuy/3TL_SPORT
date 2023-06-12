@@ -744,6 +744,8 @@
     -ms-transform: translate(-50%, -50%);
   }
 
+
+
   .container {
     position: relative;
     display: flex;
@@ -814,6 +816,16 @@
   .product-img2 {
     margin: 0 0 0 20px;
     border: 1px solid #000;
+  }
+
+  .product-img12 {
+    width: 100px;
+    height: 90px;
+  }
+
+  #img3 {
+    width: 333px;
+    height: 333px;
   }
 
   .product-img12:hover {
