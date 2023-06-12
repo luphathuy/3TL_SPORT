@@ -236,7 +236,7 @@
 
   .product img {
     width: 230px;
-    height: 230px;
+    height: 200px;
     padding: 10px;
     /* padding: 10px 0 0 0;
     transition: ease-in-out .3s; */
@@ -244,7 +244,7 @@
 
   .product img:hover {
     width: 230px;
-    height: 230px;
+    height: 200px;
     /* padding: 0 0 10px 0;
     transition: ease-in-out .3s; */
   }
@@ -257,20 +257,20 @@
   }
 
   .price {
-    font-size: 15px;
+    font-size: 13px;
     padding: 0 0 10px 0;
     font-weight: bold;
     color: #ff0000;
   }
 
   .price del {
-    font-size: 13px;
+    font-size: 10px;
     padding: 0 0 0 10px;
     color: #000000;
   }
 
   .btn-buy {
-    padding: 10px 15px 10px 15px;
+    padding: 7px 10px 7px 10px;
     font-size: 10px;
     color: #fff;
     background-color: #000000;
@@ -315,6 +315,7 @@
     color: #000000;
     font-weight: bold;
     align-items: center;
+    font-size: 10px;
   }
 
   .shoes a:hover {
