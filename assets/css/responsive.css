@@ -483,7 +483,7 @@
 
   .gg-map iframe {
     width: 500px;
-    height: 740px;
+    height: 1166px;
   }
 
   .info-form {
@@ -771,8 +771,8 @@
 
   .wrapper {
     background-color: #9b56cd;
-    padding: 100px 0 100px 260px;
-    align-items: center;
+    height: 86%;
+    padding: 300px 0 100px 260px;
   }
 
   .form-login {
